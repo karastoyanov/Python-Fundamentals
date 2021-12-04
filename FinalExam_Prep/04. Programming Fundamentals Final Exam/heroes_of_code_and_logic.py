@@ -65,8 +65,6 @@ while "End" not in command:
                     print(f"{hero_name} healed for {amount} HP!")
     command = input().split(' - ')
 
-# for k,v in sorted(heroes_dict.items(), key = lambda x: (-x[0][0], x[1])):
-#     print(f"{k}\n HP: {v[0]}\n MP: {v[1]}")
 for k,v in heroes_dict.items():
     sorted_dict = dict(sorted(heroes_dict.items(), key = lambda x:(x[0][1], reversed == True, x[0]))) 
     print(f"{k}\n HP: {v[0]}\n MP: {v[1]}")
